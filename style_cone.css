@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+
+button {
+    font-size: 1em;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: "Dela Gothic One", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+/* 簡単ボタン */
+.easy {
+    background-image: url(./背景データ/bg_easy.png);
+    /* 淡い緑色の背景 */
+    background-color: #f4f5e9;
+    /* 濃い緑色の文字 */
+    color: #ffcb00;
+    /* 差し色 */
+    -webkit-text-stroke: 2px #413e30;
+}
+
+.easy button {
+    /* ボタンの背景色（ミディアムシーグリーン） */
+    background-color: #dfce13;
+    /* ボタンの文字色（白） */
+    color: #fff;
+    /* 差し色 */
+    -webkit-text-stroke: 0.5px #413e30;
+
+}
+
+.easy button:hover {
+    background-color: #8b802e;
+    /* ボタンのホバー時の背景色（シーグリーン） */
+}
+
+/* 普通ボタン */
+.nmal {
+    background-image: url(./背景データ/bg_nmal.png);
+    /* 淡い緑色の背景 */
+    background-color: #e9f5e9;
+    /* 濃い緑色の文字 */
+    color: #30e1ac;
+    /* 差し色 */
+    -webkit-text-stroke: 2px #0e3963;
+
+}
+
+.nmal button {
+    /* ボタンの背景色（ミディアムシーグリーン） */
+    background-color: #33af6b;
+    /* ボタンの文字色（白） */
+    color: #fff;
+    -webkit-text-stroke: 0.5px #0e3963;
+
+}
+
+.nmal button:hover {
+    background-color: #2e8b57;
+    /* ボタンのホバー時の背景色（シーグリーン） */
+}
+
+/* 難しいボタン */
+.hard {
+    background-image: url(./背景データ/bg_hard.png);
+    /* 淡い緑色の背景 */
+    background-color: #f5e9e9;
+    /* 濃い緑色の文字 */
+    color: #8b2e2e;
+    /* 差し色 */
+    -webkit-text-stroke: 2px #f8f7f1;
+}
+
+.hard button {
+    /* ボタンの背景色（ミディアムシーグリーン） */
+    background-color: #c94242;
+    /* ボタンの文字色（白） */
+    color: #fff;
+    /* 差し色 */
+    -webkit-text-stroke: 0;
+}
+
+.hard button:hover {
+    background-color: #8b2e2e;
+    /* ボタンのホバー時の背景色（シーグリーン） */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+    background-color: #ccc;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.hidden {
+    background-image: url('./トランプデータ/z01.png');
+}
+
+.disabled {
+    pointer-events: none;
+    /* クリック無効化 */
+}
+
+.timer {
+    text-align: center;
+}
+
+.timer h2 {
+    font-size: 3em;
+    font-family: "Dela Gothic One", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 5px 0 1px;
+}
+
+#upTimer {
+    font-size: 3em;
+    font-family: "Darumadrop One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.card.paused {
+    opacity: 0.3; /* カードが薄くなる */
+    transition: opacity 0.4s ease-in-out; /* アニメーションを追加 */
+}
+.card.started {
+    opacity: 1; /* カードが薄くなる */
+    transition: opacity 0.4s ease-in-out; /* アニメーションを追加 */
+}
+#gameBoard {
+    margin: 0 auto;
+}
